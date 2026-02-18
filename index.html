@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>中国城市性格匹配测试</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<div id="loginBox">
+<h1>中国城市性格匹配测试</h1>
+<p>请输入访问密码</p>
+<input type="password" id="passwordInput" placeholder="输入密码">
+<button onclick="checkPassword()">进入测试</button>
+<p id="errorMsg"></p>
+</div>
+
+<div id="app" class="hidden">
+<div class="progress-bar">
+<div id="progress"></div>
+</div>
+
+<div id="questionBox"></div>
+
+<button id="nextBtn" onclick="nextQuestion()">下一题</button>
+</div>
+
+<div id="resultBox" class="hidden"></div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="logic.js"></script>
+
+
+</body>
+</html>
